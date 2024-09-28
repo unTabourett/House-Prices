@@ -1,0 +1,48 @@
+1460 rows dans train.
+81 Variables (80 + SalePrice à prédire)
+38 Quantitatives - 42 Qualitatives parmi lesquelles
+
+!       MSSubClass. Type de maison
+!       MSSubClass. Zone
+Street. Type de rue 0 ou 1 Gravier Pavé
+Alley type d'allée (91 pas nul)
+LotShape = Forme de la propriété
+!       LandContour à mettre à échelle
+!       Utilities Echelle
+?    Lot config Mitoyenne etc... 
+?    LandSlope
+!       Neighbordhood
+?    Condition1 Proximité aux routes
+?    Condition2 Si autre que 1
+!       Type de maison à echelle?
+? HouseStyle
+!       OverallQUal
+!       OverallCond
+!       ExterQual
+!       ExterCond
+!?        BsmtQual
+!       BsmtCond
+!?      BsmtExposure
+!       BsmtFinType1
+
+LotFrontage. Mesure longueur rue connectée à par propriété /1201 obs
+!       LotArea. Taille du lot §§§§§§§§§§§§§§§§§§§§§ Taille Frontage seul veut rien dire, taille frontage/lot (Aire > => Plus de frontage avec la rue)
+
+YearBuilt: Original construction date
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
+/////Renovée ou pas? Si rénovée recemment 1 sinon 0
+
+
+
+
+On va considérer ces variables :
+LotArea
+Utilities
+
+HeatingQC
+CentralAir
+GrLivArea
+KitchenQual
+TotRmsAbvGrd / TotRms???
+GarageCond
+SaleCondition
